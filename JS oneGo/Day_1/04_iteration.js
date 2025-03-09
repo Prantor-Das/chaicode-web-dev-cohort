@@ -28,10 +28,10 @@ let userActivity = [
 ];
 // find most active user
 
-let mostActiveUser = userActivity.reduce((maxUser, user) =>
+let mostActiveUserC = userActivity.reduce((maxUser, user) =>
   user.activityCount > maxUser.activityCount ? user : maxUser
 );
-console.log(mostActiveUser);
+console.log(mostActiveUserC);
 
 // Step 1: Find the maximum activity count
 let maxActivityCount = Math.max(...userActivity.map(user => user.activityCount));
